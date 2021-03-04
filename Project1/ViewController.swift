@@ -47,6 +47,7 @@ class ViewController: UITableViewController {
 
               // 3: now push it onto the navigation controller
               navigationController?.pushViewController(vc, animated: true)
+       
           }
        
     }

@@ -9,12 +9,15 @@
 import UIKit
 
 class DetailViewController: UIViewController {
- var selectedImage = ""
+    var selectedImage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myImage.image = UIImage(named: selectedImage)
+        if let imageToLoad = selectedImage {
+            myImage.image = UIImage(named: imageToLoad)
+        }
+        
         // Do any additional setup after loading the view.
     }
     
